@@ -1,0 +1,22 @@
+{
+  "name": "herolo-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "engines": {
+    "node": "10.16.0"
+  }
+}
