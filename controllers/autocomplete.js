@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 
 const handleAutoCompleteApi = (req, res, apikey) => {
   const q = req.body.inputField;
-  /* fetch(
+  fetch(
     "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" +
       apikey +
       "&q=" +
@@ -16,7 +16,7 @@ const handleAutoCompleteApi = (req, res, apikey) => {
     .catch(err => {
       console.log("catch");
       res.status(404).send(err);
-    }); */
+    });
 };
 
 module.exports = {

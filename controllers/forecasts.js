@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 const handleForecastsApi = (req, res, apikey) => {
   const locationKey = req.body.locationKey;
 
-  const data = {
+  /* const data = {
     Headline: {
       EffectiveDate: "2019-09-07T08:00:00+03:00",
       EffectiveEpochDate: 1567832400,
@@ -176,9 +176,9 @@ const handleForecastsApi = (req, res, apikey) => {
     ]
   };
 
-  res.json(data);
+  res.json(data); */
 
-  /*   fetch(
+  fetch(
     "http://dataservice.accuweather.com/forecasts/v1/daily/5day/" +
       locationKey +
       "?apikey=" +
@@ -191,7 +191,7 @@ const handleForecastsApi = (req, res, apikey) => {
     })
     .catch(err => {
       res.status(404).send(err);
-    }); */
+    });
 };
 
 module.exports = {
